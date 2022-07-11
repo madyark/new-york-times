@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Times API Project</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <h1>NEW YORK TIMES ARTICLES</h1>
+    <h2>
+        <button id="home" onClick="load_news(this.id)">HOME</button>
+        <button id="world" onClick="load_news(this.id)">WORLD NEWS</button>
+        <button id="us" onClick="load_news(this.id)">US NEWS</button>
+        <button id="science" onClick="load_news(this.id)">SCIENCE</button>
+        <button id="arts" onClick="load_news(this.id)">ARTS</button>
+        <button id="popular" onClick="load_popular()">POPULAR</button>
+        <button id="search" onClick="load_search()">SEARCH</button>
+        <button id="archive" onClick="find_archive()">FIND ARCHIVE</button>
+    </h2>
+
+    <!-- Space for API call results -->
+    <div id="headlines"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
